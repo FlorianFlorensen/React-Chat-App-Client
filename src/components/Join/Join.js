@@ -18,37 +18,37 @@ export default function SignIn() {
     <Container className="joinOuterContainer">
       <Row className="justify-content-center joinInnerContainer">
         <Col md={3} className="align-self-center joinColumn">
-          <div>
-            <h1 className="heading">Join</h1>
-          </div>
-          <Form>
-            <Form.Group controlId="formName">
-              <Form.Control
-                type="text"
-                placeholder="Username"
-                onChange={(event) => setName(event.target.value)}
-              />
-            </Form.Group>
-            <Form.Group controlId="formRoom">
-              <Form.Control
-                type="text"
-                placeholder="Room"
-                onChange={(event) => setRoom(event.target.value)}
-              />
-            </Form.Group>
-          </Form>
-          <Link
+          <div><Link
             onClick={(event) =>
               !name || !room ? event.preventDefault() : null
             }
             to={`/chat?name=${name}&room=${room}`}
           >
-            <Button variant="primary" type="submit" className="">
-              Join
-            </Button>
+            <h1 className="heading">Join</h1>
           </Link>
+          </div>
+          <Form className="joinForm">
+            <Col className="form-field">
+              <input
+                required
+                className="inputText"
+                type="text"
+                onChange={(event) => setName(event.target.value)}>
+              </input>
+              <label className="inputLabel"><span className="labelText">Username</span></label>
+            </Col>
+            <Col className="form-field" >
+              <input
+                required
+                className="inputText"
+                type="text"
+                onChange={(event) => setRoom(event.target.value)}>
+              </input>
+              <label className="inputLabel"><span className="labelText">Room</span></label>
+            </Col>
+          </Form>
         </Col>
       </Row>
-    </Container>
+    </Container >
   );
 }

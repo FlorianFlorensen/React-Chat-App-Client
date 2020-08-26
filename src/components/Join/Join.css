@@ -27,11 +27,77 @@ body {
   color: white;
   font-size: 2.5em;
   padding-bottom: 10px;
-  margin-bottom : 13px;
+  margin-bottom : 40px;
   border-bottom: 2px solid white;
   text-align: center;
+}
+
+.joinForm label {
+  pointer-events: none;
+}
+
+
+.joinForm .inputText:focus + .inputLabel, 
+.joinForm input:valid + .inputLabel {
+  font-size : 15px;
+  transform: translateY(-24px)
+}
+
+.joinForm .inputText:focus {
+  outline : none;
+}
+
+.joinForm .form-field{
+  position: relative;
+  margin-bottom: 40px
+}
+
+.joinForm .inputText{
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color : white;
+  color:white;
+  font-size : 18px;
+  line-height: 26px;
+  font-weight: 400;
+  background : none;
+}
+
+.joinForm .inputText{
+  outline : none;
+
+}
+
+.joinForm .inputLabel{
+  position: absolute;
+  color : white;
+  font-weight: 400;
+  line-height: 20pxpx;
+  cursor: text;
+  bottom : 7px;
+  text-transform: capitalize;
+  transition: transform 0.2s ease;
+}
+
+/*
+.InputWrapper input {
+  border: none;
+  border-bottom: 2px solid white;
+  background : none;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.InputWrapper label {
+  bottom: 20px;
+  color: white;
 }
 
 button:focus {
   outline: 0;
 }
+*/
+
