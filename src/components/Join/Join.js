@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import axios from "axios";
 
 import Container from 'react-bootstrap/Container';
@@ -57,10 +57,13 @@ export default function SignIn() {
       <Row className="justify-content-center joinInnerContainer">
         <Col md={3} className="align-self-center joinColumn">
           {error !== "0" ? <Error errorCode={error} /> : null}
-          <Link
-            onClick={event => { handleSubmit(event) }}>
-            <h1 className="heading">Join</h1>
-          </Link>
+          <div className="joinButtonWrapper">
+            <button
+              className="joinButton"
+              onClick={event => { handleSubmit(event) }}>
+              Join
+            </button>
+          </div>
           <Form className="joinForm">
             <Col className="form-field">
               <input
