@@ -16,11 +16,12 @@ export default function SignIn() {
   const [room, setRoom] = useState('');
   const [error, setError] = useState('0');
   const history = useHistory();
-  const SERVER_URL = process.env.BACKEND_SERVER_URL || "http://localhost:5000"
+  const SERVER_URL = process.env.BACKEND_SERVER_URL || "http://localhost:5000";
 
 
   async function handleSubmit(event) {
     event.preventDefault();
+    console.log(SERVER_URL);
     let inputIsValid = false;
 
     try {
