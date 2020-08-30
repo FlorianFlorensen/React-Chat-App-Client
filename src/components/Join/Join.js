@@ -21,7 +21,7 @@ export default function SignIn() {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    let inputIsValid
+    let inputIsValid = false;
 
     try {
       inputIsValid = await validateInput();
