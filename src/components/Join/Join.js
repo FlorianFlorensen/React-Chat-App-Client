@@ -37,7 +37,7 @@ export default function SignIn() {
       isValid = false;
     }
     else {
-      const response = await axios.post("http://localhost:5000/validateUser", {
+      const response = await axios.post("https://dontsnitchonmebackend.herokuapp.com/validateUser", {
         username: name,
         room: room,
       })
