@@ -1,0 +1,14 @@
+.errorText{
+  color : #FFFFFF;
+}
+
+
+.joinErrorContainer {
+  color: white;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  border : 2px solid;
+  border-radius : 15px; 
+  margin-bottom: 20px;
+}
