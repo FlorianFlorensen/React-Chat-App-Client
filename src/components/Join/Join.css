@@ -21,14 +21,10 @@ body {
   justify-content: center;
 }
 
-.heading {
-  color: white;
-  font-size: 2.5em;
-  padding-bottom: 10px;
-  margin-bottom : 40px;
-  border-bottom: 2px solid white;
-  text-align: center;
-}
+
+
+
+
 
 .joinButtonWrapper {
   display : flex;
@@ -62,10 +58,15 @@ body {
   100%{transform: rotate(0deg)}
 }
 
+
+
+
+
+
+
 .joinForm label {
   pointer-events: none;
 }
-
 
 .joinForm .inputText:focus + .inputLabel, 
 .joinForm input:valid + .inputLabel {
@@ -97,7 +98,6 @@ body {
 
 .joinForm .inputText{
   outline : none;
-
 }
 
 .joinForm .inputLabel{
@@ -110,24 +110,3 @@ body {
   text-transform: capitalize;
   transition: transform 0.2s ease;
 }
-
-/*
-.InputWrapper input {
-  border: none;
-  border-bottom: 2px solid white;
-  background : none;
-  height: 100%;
-  width: 100%;
-  color: white;
-}
-
-.InputWrapper label {
-  bottom: 20px;
-  color: white;
-}
-
-button:focus {
-  outline: 0;
-}
-*/
-
