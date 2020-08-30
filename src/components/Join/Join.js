@@ -16,6 +16,7 @@ export default function SignIn() {
   const [room, setRoom] = useState('');
   const [error, setError] = useState('0');
   const history = useHistory();
+  const SERVER_URL = process.env.SERVER_URL || "http://localhost:5000"
 
 
   async function handleSubmit(event) {
@@ -37,7 +38,7 @@ export default function SignIn() {
       isValid = false;
     }
     else {
-      const response = await axios.post("https://dontsnitchonmebackend.herokuapp.com/validateUser", {
+      const response = await axios.post(`${SERVER_URL}/validateUser`, {
         username: name,
         room: room,
       })
