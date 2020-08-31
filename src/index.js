@@ -7,4 +7,5 @@ import App from './app';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
+//only activates when Node Envrioment is in production
 serviceWorker.register();
