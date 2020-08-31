@@ -3,8 +3,9 @@
     "name": "dontSnitchOnMe Chat App",
     "icons": [
         {
-            "src": "images/chat-app-icon.svg",
-            "sizes": "any",
+            "src": "images/chat-app-icon-png.png",
+            "sizes": "1042x104",
+            "type": "image/png",
             "purpose": "maskable any"
         }
     ],
