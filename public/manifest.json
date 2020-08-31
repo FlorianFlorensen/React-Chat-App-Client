@@ -4,7 +4,7 @@
     "icons": [
         {
             "src": "images/chat-app-icon-png.png",
-            "sizes": "1042x104",
+            "sizes": "1024x1024",
             "type": "image/png",
             "purpose": "maskable any"
         }
