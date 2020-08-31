@@ -3,10 +3,10 @@
     "name": "dontSnitchOnMe Chat App",
     "icons": [
         {
-            "src": "images/logo.png",
+            "src": "images/logo-512x512.png",
             "type": "image/png",
             "sizes": "512x512",
-            "purpose": "maskable"
+            "purpose": "maskable any"
         }
     ],
     "start_url": ".",

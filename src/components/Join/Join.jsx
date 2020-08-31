@@ -21,7 +21,6 @@ export default function SignIn() {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    console.log(SERVER_URL);
     let inputIsValid = false;
 
     try {
