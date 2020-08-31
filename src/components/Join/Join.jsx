@@ -16,7 +16,8 @@ export default function SignIn() {
   const [room, setRoom] = useState('');
   const [error, setError] = useState('0');
   const history = useHistory();
-  const SERVER_URL = "http://localhost:5000";
+  //const SERVER_URL = "http://localhost:5000";
+  const SERVER_URL = "https://dontsnitchonmebackend.herokuapp.com";
 
 
   async function handleSubmit(event) {
