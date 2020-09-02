@@ -2,11 +2,6 @@ import React, { useState, useEffect } from 'react';
 import queryString from 'query-string';
 import io from 'socket.io-client';
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-
 import Messages from './Messages/Messages';
 import InfoBar from './InfoBar/InfoBar';
 import Input from './Input/Input';
@@ -58,27 +53,13 @@ const Chat = ({ location }) => {
   };
 
   return (
-    <Container fluid className="chatOuterContainer">
-      <Row className="justify-content-md-center align-items-center chatInnerContainer">
-        <Col md={6} className="h-75 align-self-center">
-          <Card className="h-100">
-            <Card.Header>
-              <InfoBar room={room} />
-            </Card.Header>
-            <Card.Body>
-              <Messages messages={messages} name={name} />
-            </Card.Body>
-            <Card.Footer>
-              <Input
-                message={message}
-                setMessage={setMessage}
-                sendMessage={sendMessage}
-              />
-            </Card.Footer>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
+    <div className="outerContainer">
+      <div className="innerContainer">
+        <InfoBar room={room} />
+        <Messages messages={messages} name={name} />
+        <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
+      </div>
+    </div>
   );
 };
 
