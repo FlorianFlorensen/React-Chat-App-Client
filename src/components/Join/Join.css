@@ -1,112 +1,119 @@
-html, body {
+html,
+body {
   font-family: 'Roboto', sans-serif;
-  height : 100vh;
+  height: 100vh;
 }
 
 body {
-  background-image: url('../../media/images/foggyForrestBackground.jpg');
+  background: black;
+}
+
+.joinRow {
+  height: 100vh;
+}
+
+.joinUpperColumn {
+  background-image: url('../../media/images/foggyForrestBackground2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
 }
 
-.joinInnerContainer {
-  height : 100vh;
+.joinWrapperText {
+  color: white;
 }
 
-.joinColumn {
-  display : flex-vertical;
+.joinLowerColumn {
+  display: flex-vertical;
   align-items: center;
   justify-content: center;
 }
 
-
-
-
-
-
 .joinButtonWrapper {
-  display : flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 2px solid white;
-  margin-bottom : 40px;
+  margin-bottom: 40px;
 }
 
 .joinButton {
-  background : none;
-  border : none;
-  font-size : 2.5em;
+  background: none;
+  border: none;
+  font-size: 1.5em;
   color: white;
-
 }
 
 .joinButton:focus {
-  outline:0;
+  outline: 0;
 }
 
 .joinButton:active {
   animation: wiggle 2s;
 }
 
-@keyframes wiggle{
-  0%{transform: rotate(0deg)}
-  3%{transform: rotate(-4deg)}
-  4%{transform: rotate(4deg)}
-  5%{transform: rotate(0deg)}
-  100%{transform: rotate(0deg)}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  3% {
+    transform: rotate(-4deg);
+  }
+  4% {
+    transform: rotate(4deg);
+  }
+  5% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-
-
-
-
-
-
 
 .joinForm label {
   pointer-events: none;
 }
 
-.joinForm .inputText:focus + .inputLabel, 
+.joinForm .inputText:focus + .inputLabel,
 .joinForm input:valid + .inputLabel {
-  font-size : 15px;
-  transform: translateY(-24px)
+  font-size: 15px;
+  transform: translateY(-24px);
 }
 
 .joinForm .inputText:focus {
-  outline : none;
+  outline: none;
 }
 
-.joinForm .form-field{
+.joinForm .form-field {
   position: relative;
-  margin-bottom: 40px
+  margin-bottom: 40px;
 }
 
-.joinForm .inputText{
+.joinForm .inputText {
   display: block;
   width: 100%;
   height: 36px;
   border-width: 0 0 2px 0;
-  border-color : white;
-  color:white;
-  font-size : 18px;
+  border-color: white;
+  color: white;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 400;
-  background : none;
+  background: none;
 }
 
-.joinForm .inputText{
-  outline : none;
+.joinForm .inputText {
+  outline: none;
 }
 
-.joinForm .inputLabel{
+.joinForm .inputLabel {
   position: absolute;
-  color : white;
+  color: white;
   font-weight: 400;
   line-height: 20pxpx;
   cursor: text;
-  bottom : 7px;
+  bottom: 7px;
   text-transform: capitalize;
   transition: transform 0.2s ease;
 }
