@@ -77,7 +77,7 @@ body {
 
 .joinForm .inputText:focus + .inputLabel,
 .joinForm input:valid + .inputLabel {
-  font-size: 15px;
+  font-size: 13px;
   transform: translateY(-24px);
 }
 

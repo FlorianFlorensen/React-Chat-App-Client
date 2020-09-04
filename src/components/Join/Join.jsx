@@ -52,7 +52,7 @@ export default function SignIn() {
   }
 
   return (
-    <Container className="joinOuterContainer">
+    <Container fluid className="joinOuterContainer">
       <Row className="justify-content-center flex-column joinRow">
         <Col className="d-flex justify-content-center align-items-center joinUpperColumn">
           <div className="joinWrapperText">
