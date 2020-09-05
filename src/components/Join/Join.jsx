@@ -53,7 +53,7 @@ export default function SignIn() {
 
   return (
     <Container fluid className="joinOuterContainer">
-      <Row className="justify-content-center flex-column joinRow">
+      <Row className="justify-content-center flex-column flex-lg-row joinRow">
         <Col className="d-flex justify-content-center align-items-center joinUpperColumn">
           <div className="joinWrapperText">
             <h1>Forrest Chat</h1>
@@ -63,67 +63,71 @@ export default function SignIn() {
         <Col className="d-flex flex-column justify-content-center align-items-center joinLowerColumn">
           <Row className="flex-column">
             <Col>
-              {error !== '0' ? <Error errorCode={error} /> : null}
-              <div className="joinButtonWrapper">
-                <button
-                  className="joinButton"
-                  onClick={(event) => {
-                    handleSubmit(event);
-                  }}
-                >
-                  Create Room
-                </button>
+              <div className="formWrapper">
+                {error !== '0' ? <Error errorCode={error} /> : null}
+                <div className="joinButtonWrapper">
+                  <button
+                    className="joinButton"
+                    onClick={(event) => {
+                      handleSubmit(event);
+                    }}
+                  >
+                    Create Room
+                  </button>
+                </div>
+                <Form className="joinForm">
+                  <Col className="form-field">
+                    <input
+                      required
+                      className="inputText"
+                      type="text"
+                      onChange={(event) => setName(event.target.value)}
+                    ></input>
+                    <label className="inputLabel">
+                      <span className="labelText">Username</span>
+                    </label>
+                  </Col>
+                </Form>
               </div>
-              <Form className="joinForm">
-                <Col className="form-field">
-                  <input
-                    required
-                    className="inputText"
-                    type="text"
-                    onChange={(event) => setName(event.target.value)}
-                  ></input>
-                  <label className="inputLabel">
-                    <span className="labelText">Username</span>
-                  </label>
-                </Col>
-              </Form>
             </Col>
             <Col>
-              {error !== '0' ? <Error errorCode={error} /> : null}
-              <div className="joinButtonWrapper">
-                <button
-                  className="joinButton"
-                  onClick={(event) => {
-                    handleSubmit(event);
-                  }}
-                >
-                  Join a Room
-                </button>
+              <div className="formWrapper">
+                {error !== '0' ? <Error errorCode={error} /> : null}
+                <div className="joinButtonWrapper">
+                  <button
+                    className="joinButton"
+                    onClick={(event) => {
+                      handleSubmit(event);
+                    }}
+                  >
+                    Join a Room
+                  </button>
+                </div>
+                <Form className="joinForm">
+                  <Col className="form-field">
+                    <input
+                      required
+                      className="inputText"
+                      type="text"
+                      onChange={(event) => setName(event.target.value)}
+                    ></input>
+                    <label className="inputLabel">
+                      <span className="labelText">Username</span>
+                    </label>
+                  </Col>
+                  <Col className="form-field">
+                    <input
+                      required
+                      className="inputText"
+                      type="text"
+                      onChange={(event) => setRoom(event.target.value)}
+                    ></input>
+                    <label className="inputLabel">
+                      <span className="labelText">Room Id</span>
+                    </label>
+                  </Col>
+                </Form>
               </div>
-              <Form className="joinForm">
-                <Col className="form-field">
-                  <input
-                    required
-                    className="inputText"
-                    type="text"
-                    onChange={(event) => setName(event.target.value)}
-                  ></input>
-                  <label className="inputLabel">
-                    <span className="labelText">Username</span>
-                  </label>
-                </Col>
-                <Col className="form-field">
-                  <input
-                    required
-                    className="inputText"
-                    type="text"
-                    onChange={(event) => setRoom(event.target.value)}
-                  ></input>
-                  <label className="inputLabel">
-                    <span className="labelText">Room Id</span>
-                  </label>
-                </Col>
-              </Form>
             </Col>
           </Row>
         </Col>
