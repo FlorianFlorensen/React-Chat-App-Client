@@ -53,7 +53,7 @@ export default function SignIn() {
 
   return (
     <Container fluid className="joinOuterContainer">
-      <Row className="justify-content-center flex-column flex-lg-row joinRow">
+      <Row className="flex-column flex-lg-row justify-content-center joinRow">
         <Col className="d-flex justify-content-center align-items-center joinUpperColumn">
           <div className="joinWrapperText">
             <h1>Forrest Chat</h1>

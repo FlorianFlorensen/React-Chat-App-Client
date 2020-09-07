@@ -1,5 +1,12 @@
 .messages {
   padding: 5% 0;
+  overflow-y: scroll;
+}
+
+/*
+.messages {
+  padding: 5% 0;
   overflow: auto;
   flex: auto;
 }
+*/

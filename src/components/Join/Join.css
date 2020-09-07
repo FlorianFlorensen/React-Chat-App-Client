@@ -25,15 +25,10 @@ body {
 }
 
 .joinLowerColumn {
-  display: flex-vertical;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(20px);
-  background-color: black;
+  backdrop-filter: blur(0px);
 }
 
 .formWrapper {
-  border: solid 2px white;
   margin: 4px;
 }
 
@@ -59,7 +54,7 @@ body {
 .joinForm label {
   color: white;
 }
-/*
+
 .joinButton:active {
   animation: wiggle 2s;
 }
@@ -128,4 +123,3 @@ body {
   text-transform: capitalize;
   transition: transform 0.2s ease;
 }
-*/
