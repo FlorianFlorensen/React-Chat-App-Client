@@ -1,7 +1,6 @@
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  height: 100vh;
 }
 
 body {
@@ -15,9 +14,6 @@ body {
 
 .joinRow {
   height: 100vh;
-}
-
-.joinUpperColumn {
 }
 
 .joinWrapperText {
@@ -37,7 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   border-bottom: 2px solid white;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .joinButton {

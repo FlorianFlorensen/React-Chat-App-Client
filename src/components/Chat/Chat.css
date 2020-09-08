@@ -1,7 +1,12 @@
 .contentContainer {
+  display: flex;
   background: black;
   border: 1px solid black;
   height: 100vh;
+}
+
+.contentRow {
+  flex-grow: 1;
 }
 
 /* This os a commetn*/

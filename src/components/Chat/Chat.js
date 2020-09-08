@@ -26,14 +26,14 @@ const Chat = ({ location }) => {
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
-
-    socket = io(ENDPOINT);
-
     setRoom(room);
     setName(name);
 
+    socket = io(ENDPOINT);
+
     socket.emit('join', { name, room }, (error) => {
       if (error) {
+        console.log('Error when joining the Socket');
       }
     });
   }, [ENDPOINT, location.search]);
@@ -58,7 +58,7 @@ const Chat = ({ location }) => {
   return (
     <StrictMode>
       <Container className="contentContainer">
-        <Row className="h-100">
+        <Row className="contentRow">
           <Col className="p-0 d-flex flex-column">
             <InfoBar room={room} />
             <Messages messages={messages} name={name} />
@@ -72,17 +72,6 @@ const Chat = ({ location }) => {
       </Container>
     </StrictMode>
   );
-  /*
-  return (
-    <div className="outerContainer">
-      <div className="innerContainer">
-        <InfoBar room={room} />
-        <Messages messages={messages} name={name} />
-        <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
-      </div>
-    </div>
-  );
-  */
 };
 
 export default Chat;
