@@ -3,7 +3,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import onlineIcon from '../../../media/icons/onlineIcon.png';
+//import onlineIcon from '../../../media/icons/onlineIcon.png';
 import closeIcon from '../../../media/icons/closeIcon.png';
 
 import './InfoBar.css';
