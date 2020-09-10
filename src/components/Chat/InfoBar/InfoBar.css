@@ -1,3 +1,12 @@
+.infoBox {
+  background-color: rgb(30, 30, 97);
+}
+
+.room-text {
+  color: white;
+}
+
+/*
 .infoBar {
   height: 60px;
   background: #2979ff;
@@ -22,3 +31,4 @@
 .onlineIcon {
   margin-right: 5%;
 }
+*/

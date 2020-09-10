@@ -1,4 +1,13 @@
-.form {
+.form-inline .form-control {
+  display: inline-block !important;
+  width: auto !important;
+}
+
+.form-inline {
+  background-color: rgb(30, 30, 97);
+}
+
+/*.form {
   display: flex;
   border-top: 2px solid #D3D3D3;
 }
@@ -25,3 +34,4 @@ input:focus, textarea:focus, select:focus{
   border: none;
   width: 20%;
 }
+*/
